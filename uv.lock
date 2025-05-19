@@ -407,14 +407,14 @@ wheels = [
 
 [[package]]
 name = "enerhabitat"
-version = "0.1.5"
+version = "0.1.8"
 source = { registry = "https://test.pypi.org/simple" }
 dependencies = [
     { name = "pvlib" },
 ]
-sdist = { url = "https://test-files.pythonhosted.org/packages/f2/de/328ab9571654ac0115f88f1df1489ea09b7dc586849fd457303e03c2a4a0/enerhabitat-0.1.5.tar.gz", hash = "sha256:e19514c34abca04c9a566ff8426f8ab7da52f8465015c640c3749c27d5f053ea", size = 8094 }
+sdist = { url = "https://test-files.pythonhosted.org/packages/74/aa/d4610142dba64d76ad0ac188b64a51d011fe8a2d1eb1b175729006ca0912/enerhabitat-0.1.8.tar.gz", hash = "sha256:1d97cc8c2dba60eb0ccc15d85222b7a2260bf8670869a27d7605b97d3224a58a", size = 40092 }
 wheels = [
-    { url = "https://test-files.pythonhosted.org/packages/90/1c/59b575aeae4853af3c707d4159ad1867c75801c8f0daae6f777152f3d8ee/enerhabitat-0.1.5-py3-none-any.whl", hash = "sha256:8ce4708f73254bf7cf8d73f03dc237f216da3c364627cac3305550e22b126515", size = 9053 },
+    { url = "https://test-files.pythonhosted.org/packages/14/77/1fcd37eca1eff696c2aa0a9fee25bf509f2a33414323eff99781a0bee36b/enerhabitat-0.1.8-py3-none-any.whl", hash = "sha256:a51ed43397b9e81f22f8c7e63c096d432ff789882a86347745640a5a1ddeaf68", size = 9144 },
 ]
 
 [[package]]
@@ -1452,7 +1452,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "enerhabitat", specifier = "==0.1.5", index = "https://test.pypi.org/simple" },
+    { name = "enerhabitat", specifier = "==0.1.8", index = "https://test.pypi.org/simple" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "matplotlib", specifier = ">=3.9.4" },
     { name = "nbformat", specifier = ">=5.10.4" },
