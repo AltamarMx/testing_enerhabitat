@@ -1,5 +1,6 @@
 # %% 
-import enerhabitat as eh 
+import enerhabitat as eh
+import pandas as pd 
 import plotly.express as px
 
 # %%
@@ -24,8 +25,8 @@ tsa_df
 
 #%%
 sc = [
-    ("steel", 0.1),
-    ("adobe", 0.1),
+    ("Adobe", 0.1),
+    ("Acero", 0.1),
 #    ("brick", 0.2),
 #    ("concrete", 0.1),
 ]
@@ -34,7 +35,7 @@ sc = [
 dia = eh.solveCS(sc, tsa_df)
 
 #%%
-dia
+pd.concat([tsa_df, dia], axis=1)
 
 #%%
 px.scatter(
