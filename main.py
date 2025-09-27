@@ -10,7 +10,7 @@ eh.materials('./eh_config/materials.ini')
 dia_promedio = eh.meanDay(epw_file="epw/USA_CA_San.Francisco.Intl.AP.724940_TMY3.epw")
 
 #%%
-dia_promedio
+dia_promedio.info()
 
 #%%
 tsa_df = eh.Tsa(
@@ -21,7 +21,7 @@ tsa_df = eh.Tsa(
     )
 
 #%%
-tsa_df
+tsa_df.info()
 
 #%%
 sc = [
@@ -32,15 +32,15 @@ sc = [
 ]
 
 #%%
-dia = eh.solveCS(sc, tsa_df)
+solucion = eh.solveCS(sc, tsa_df)
 
 #%%
-pd.concat([tsa_df, dia], axis=1)
+solucion=pd.concat([tsa_df, solucion], axis=1)
 
 #%%
 px.scatter(
-    data_frame=dia,
-    x=dia.index,
+    data_frame=solucion,
+    x=solucion.index,
     y=["Ta","Tsa","Ti"]
 )
 # %%
