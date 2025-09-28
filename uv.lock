@@ -248,16 +248,16 @@ wheels = [
 
 [[package]]
 name = "enerhabitat"
-version = "0.1.3"
-source = { registry = "https://pypi.org/simple" }
+version = "0.1.12"
+source = { registry = "https://test.pypi.org/simple/" }
 dependencies = [
     { name = "numba", version = "0.60.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10'" },
     { name = "numba", version = "0.61.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
     { name = "pvlib" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/a5/11/22883af5040e59dcc1e2fe5123168286f840db8c4c07296266d204447e75/enerhabitat-0.1.3.tar.gz", hash = "sha256:b576e5ac1f351bb9872633b92f1321f262fa056a24c95ece1190daca3df7be29", size = 49506 }
+sdist = { url = "https://test-files.pythonhosted.org/packages/41/45/de376a6ae8a44a42fc2aa7a551531baaf28f2463f88d186d95b8b8c29e47/enerhabitat-0.1.12.tar.gz", hash = "sha256:4551fa806f28de4c1e46797b295e80774b6dfcdbe31da853ba5b118575353294", size = 49495 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f5/6b/359a49dac67f0c9551641bf1f0fd848d765f55cbc9f647943ae7f472ed8a/enerhabitat-0.1.3-py3-none-any.whl", hash = "sha256:1c7b0ca64eb472662331f07555bdeab74a98752255f064cb6d1ec8de609e865a", size = 10665 },
+    { url = "https://test-files.pythonhosted.org/packages/75/78/4ece14c9fe5c45377d3845e65e43589b7d21e1c2c3d438aecb8e7b341a54/enerhabitat-0.1.12-py3-none-any.whl", hash = "sha256:a29f80fdf50a0944630e410c67b2fa4f891583bae85131c8ac7218d5fba8b9a1", size = 10666 },
 ]
 
 [[package]]
@@ -968,7 +968,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "enerhabitat", specifier = ">=0.1.3" },
+    { name = "enerhabitat", specifier = ">=0.1.12", index = "https://test.pypi.org/simple/" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "nbformat", specifier = ">=5.10.4" },
     { name = "plotly", specifier = ">=6.0.1" },

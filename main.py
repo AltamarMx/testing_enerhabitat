@@ -32,15 +32,23 @@ sc = [
 ]
 
 #%%
-solucion = eh.solveCS(sc, tsa_df)
+
+sc_df = eh.solveCS(sc, tsa_df)
+sc_df.info()
 
 #%%
-solucion=pd.concat([tsa_df, solucion], axis=1)
+resultado = tsa_df.join(sc_df, how="right")
+resultado.info()
+
+#%%
+solucion = pd.concat([resultado[['zenith', 'elevation', 'azimuth', 'equation_of_time', 'Tn', 'DeltaTn', 'Ta', 'Ig', 'Ib', 'Id']], resultado[["Is", "Tsa", "Ti"]].add_suffix("_1", axis=1)], axis=1)
+
+solucion.info()
 
 #%%
 px.scatter(
     data_frame=solucion,
     x=solucion.index,
-    y=["Ta","Tsa","Ti"]
+    y=["Ta","Tsa_1","Ti_1"]
 )
 # %%
