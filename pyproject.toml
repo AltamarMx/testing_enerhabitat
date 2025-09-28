@@ -11,12 +11,3 @@ dependencies = [
     "plotly>=6.0.1",
 ]
 
-"""
-[tool.uv.sources]
-enerhabitat = { index = "tpypi" }
-
-[[tool.uv.index]]
-name = "tpypi"
-url = "https://test.pypi.org/simple/"
-explicit=true
-"""
