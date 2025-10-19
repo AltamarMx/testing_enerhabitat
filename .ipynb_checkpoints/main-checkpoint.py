@@ -2,9 +2,9 @@
 import enerhabitat as eh
 import pandas as pd 
 import plotly.express as px
-import time
 
 # %%
+% timeit
 eh.Nx = 100
 eh.dt = 100
 eh.materials('./eh_config/materials.ini')
@@ -23,16 +23,9 @@ sc = [
 #    ("concrete", 0.1),
 ]
 
-#%%
 
-t0 = time.perf_counter()
-sc_df = eh.solveCS(sc, tsa_df)
-t1 = time.perf_counter()
-print(f"Tardó {(t1 - t0)*1000:.3f} ms\n")
-
-
-sc_df.info()
-sc_df = sc_df.round(2)
+sc_df, ET = eh.solveCS(sc, tsa_df,Energia=True)
+ET
 #%%
 resultado = tsa_df.join(sc_df, how="right")
 resultado.info()
