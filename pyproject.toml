@@ -14,5 +14,5 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-enerhabitat = { path = "../EnerHabitat/dist/enerhabitat-0.0.2-py3-none-any.whl" }
+enerhabitat = { path = "../EnerHabitat" }
 
