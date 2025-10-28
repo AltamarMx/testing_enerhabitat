@@ -532,7 +532,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "enerhabitat", directory = "../EnerHabitat" },
+    { name = "enerhabitat", specifier = ">=0.1.6" },
     { name = "fastparquet", specifier = ">=2024.11.0" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "nbformat", specifier = ">=5.10.4" },
@@ -542,17 +542,15 @@ requires-dist = [
 
 [[package]]
 name = "enerhabitat"
-version = "0.1.5"
-source = { directory = "../EnerHabitat" }
+version = "0.1.6"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numba" },
     { name = "pvlib" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "numba", specifier = ">=0.62.1" },
-    { name = "pvlib", specifier = ">=0.13.1" },
+sdist = { url = "https://files.pythonhosted.org/packages/6b/df/fd5df565cd6a7461eca71ef68048d8b9b04f705675f6020d33882e7147fb/enerhabitat-0.1.6.tar.gz", hash = "sha256:89928fbc116946f574c4b060d7e243e9f1efc11bd3d88e1bce40f4a7bbefb82b", size = 59135, upload-time = "2025-10-28T01:51:36.537Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c2/9b/1cfd1abca1f2406ecee41be6855e443f52cf002cb22755f220e2deb971a8/enerhabitat-0.1.6-py3-none-any.whl", hash = "sha256:a685cc9b303aa9b657afded63b4ea2eb93875c77d2c9c2278936d4aa2c72084c", size = 11860, upload-time = "2025-10-28T01:51:35.655Z" },
 ]
 
 [[package]]
