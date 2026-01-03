@@ -550,7 +550,7 @@ dependencies = [
     { name = "pvlib" },
 ]
 wheels = [
-    { filename = "enerhabitat-0.0.1-py3-none-any.whl", hash = "sha256:59fae7c3332603d59b79047777d1cedc419a46a3cebdc4867856a08b1404bdda" },
+    { filename = "enerhabitat-0.0.1-py3-none-any.whl", hash = "sha256:8a88ec68a8ff33a2582578e20c9bfb8f8ed4a7d5a8a96c4fd1e075024e42eff6" },
 ]
 
 [package.metadata]
